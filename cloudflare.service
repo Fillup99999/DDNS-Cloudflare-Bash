@@ -1,0 +1,8 @@
+[Unit]
+Description=Cloudflare Update
+
+[Service]
+Type=oneshot
+User=root
+WorkingDirectory=/opt/cloudflare
+ExecStart=/opt/cloudflare/.venv/bin/python /opt/cloudflare/cloudflare
