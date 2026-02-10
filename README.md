@@ -56,7 +56,7 @@ Test it by changing the cloudflare dns entry and see if it corrects it and messa
 
 __________________________________________________________________________________________________________________________________________________
 
-##***BELOW THIS IS REFERENCE TO THE FORKED REPOSITORY, USAGE IS NO LONGER APPLICABLE TO THIS REPOSITORY, but still relevant to giving credit***
+## ***BELOW THIS IS REFERENCE TO THE FORKED REPOSITORY, USAGE IS NO LONGER APPLICABLE TO THIS REPOSITORY, but still relevant to giving credit***
 
 __________________________________________________________________________________________________________________________________________________
 
