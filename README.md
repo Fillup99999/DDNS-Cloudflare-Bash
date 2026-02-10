@@ -1,5 +1,6 @@
 # Rewritten in Python with some optimizations.
 
+Install the program:
 ```
 sudo -s
 git clone https://github.com/Fillup99999/DDNS-Cloudflare-Bash.git
@@ -35,6 +36,7 @@ telegram_chat_id="xxxxxxxxxx"
 telegram_bot_API_Token="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 ```
 
+Activate the service:
 ```
 mv cloudflare.service /etc/systemd/system/cloudflare.service
 mv cloudflare.timer /etc/systemd/system/cloudflare.timer
@@ -42,17 +44,20 @@ mv cloudflare.timer /etc/systemd/system/cloudflare.timer
 systemctl daemon-reexec
 systemctl daemon-reload
 systemctl enable cloudflare.timer --now
+reboot
 ```
 
+Test it by changing the cloudflare dns entry and see if it corrects it and messages you!
 
 
 
 
-______________________________________________________________________________________________________________________________
 
-##***BELOW THIS IS REFERENCE TO THE FORKED REPOSITORY, USAGE IS NO LONGER APPLICABLE TO THIS REPOSITORY***
+__________________________________________________________________________________________________________________________________________________
 
-______________________________________________________________________________________________________________________________
+##***BELOW THIS IS REFERENCE TO THE FORKED REPOSITORY, USAGE IS NO LONGER APPLICABLE TO THIS REPOSITORY, but still relevant to giving credit***
+
+__________________________________________________________________________________________________________________________________________________
 
 
 
