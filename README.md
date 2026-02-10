@@ -24,14 +24,14 @@ Make the changes to the `.env` file (it should be hidden but still there):
 dns_record="xxxxxxxxxxxxxxx.com"
 ## Cloudflare's Zone ID, you can find this on the landing/overview page of your domain.
 zoneid="xxxxxxxxxxxxxxxxxxxxxxxxxx"
-## Cloudflare Zone API Token
+## Cloudflare Zone API Token - Create the "edit zone" premade one, select edit, and select the permissions.
 cloudflare_api_token="xxxxxxxxxxxxxxxxxxxxxxxxx"
 
 
 ### TELEGRAM:
-## Telegram Chat ID
+## Telegram Chat ID - Add the telegram bot to a group, then login to a browser and find the group ID in the url. (i.e. "-2893742374")
 telegram_chat_id="xxxxxxxxxx"
-## Telegram Bot API Key
+## Telegram Bot API Key - Talk to the @Botfather
 telegram_bot_API_Token="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 ```
 
