@@ -48,16 +48,6 @@ systemctl enable cloudflare.timer --now
 
 
 
-## Some things of Note:
-
-- Systemd service files are cloudflare.service and cloudflare.timer.
-- In order to do the least work on it, put the files in /opt/cloudflare and change the `update-cloudflare-dns.py` to `cloudflare`.
-- Don't forget to enable execution, don't forget to enable the service.
-- Don't forget to test it.
-- Add the telegram bot to a group, then login to a browser and find the group ID in the url. (i.e. "-2893742374")
-
-
-
 ______________________________________________________________________________________________________________________________
 
 ##***BELOW THIS IS REFERENCE TO THE FORKED REPOSITORY, USAGE IS NO LONGER APPLICABLE TO THIS REPOSITORY***
