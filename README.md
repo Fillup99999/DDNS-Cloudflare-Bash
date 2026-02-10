@@ -1,4 +1,53 @@
 # Rewritten in Python with some optimizations.
+
+```
+sudo -s
+git clone https://github.com/Fillup99999/DDNS-Cloudflare-Bash.git
+mv DDNS-Cloudflare-Bash /opt/cloudflare
+cd /opt/cloudflare
+mv update-cloudflare-dns.py cloudflare
+chmod +x cloudflare
+apt update && apt install python3.12-venv -y
+python3.12 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+python3 cloudflare
+deactivate
+```
+
+Make the changes to the `.env` file (it should be hidden but still there):
+```
+##### Config
+
+### CLOUDFLARE:
+## DNS A record to be updated, you can separate multiple records by comma
+dns_record="xxxxxxxxxxxxxxx.com"
+## Cloudflare's Zone ID, you can find this on the landing/overview page of your domain.
+zoneid="xxxxxxxxxxxxxxxxxxxxxxxxxx"
+## Cloudflare Zone API Token
+cloudflare_api_token="xxxxxxxxxxxxxxxxxxxxxxxxx"
+
+
+### TELEGRAM:
+## Telegram Chat ID
+telegram_chat_id="xxxxxxxxxx"
+## Telegram Bot API Key
+telegram_bot_API_Token="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+```
+
+```
+mv cloudflare.service /etc/systemd/system/cloudflare.service
+mv cloudflare.timer /etc/systemd/system/cloudflare.timer
+#Reload and enable system daemons:
+systemctl daemon-reexec
+systemctl daemon-reload
+systemctl enable cloudflare.timer --now
+```
+
+
+
+
+
 ## Some things of Note:
 
 - Systemd service files are cloudflare.service and cloudflare.timer.
@@ -9,11 +58,11 @@
 
 
 
-__________________________________________
+______________________________________________________________________________________________________________________________
 
+##***BELOW THIS IS REFERENCE TO THE FORKED REPOSITORY, USAGE IS NO LONGER APPLICABLE TO THIS REPOSITORY***
 
-
-___________________________________________
+______________________________________________________________________________________________________________________________
 
 
 
