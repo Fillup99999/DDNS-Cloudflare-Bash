@@ -5,4 +5,4 @@ Description=Cloudflare Update
 Type=oneshot
 User=root
 WorkingDirectory=/opt/cloudflare
-ExecStart=/opt/cloudflare/.venv/bin/python /opt/cloudflare/cloudflare
+ExecStart=/opt/cloudflare/venv/bin/python /opt/cloudflare/cloudflare
