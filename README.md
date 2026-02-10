@@ -1,4 +1,5 @@
-# Rewritten in Python with some optimizations.
+# DDNS-Cloudflare-Bash (Now Python)
+## Rewritten in Python with some optimizations.
 
 Install the program:
 ```
@@ -70,7 +71,7 @@ ________________________________________________________________________________
 
 
 ______________________________________________________________________________________________________________________________________________________________
-# DDNS Cloudflare Bash Script
+### DDNS Cloudflare Bash Script
 
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/fire1ce/3os.org/tree/master/src)
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://mit-license.org/)
